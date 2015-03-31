@@ -1,0 +1,9 @@
+<% dpl=measure('dpl')
+   if dpl %>
+  <div class="dashbox">
+    <h3>Technical Debt per Line of Code</h3>
+    <span class="big">
+        <%= format_measure(dpl, :prefix => '$ ', :suffix => ' /line') %> <%= tendency_icon(dpl) %></h3>
+    </span>
+  </div>
+<% end %>
